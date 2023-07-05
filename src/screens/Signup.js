@@ -20,7 +20,7 @@ export default function Signup() {
       })
     );
     const response = await fetch(
-      "https://food-app-backend-hcd7.onrender.com/api/creatuser",
+      "https://backend-yn0e.onrender.com/api/creatuser",
       {
         method: "POST",
         headers: {

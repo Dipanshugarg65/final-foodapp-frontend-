@@ -13,7 +13,7 @@ export default function Login() {
       })
     );
     const response = await fetch(
-      "https://food-app-backend-hcd7.onrender.com/api/loginuser",
+      "https://backend-yn0e.onrender.com/api/loginuser",
       {
         method: "POST",
         headers: {

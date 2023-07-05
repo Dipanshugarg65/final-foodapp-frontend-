@@ -11,7 +11,7 @@ export default function Home() {
 
   const loadData = async () => {
     let response = await fetch(
-      "https://food-app-backend-hcd7.onrender.com/api/foodData",
+      "https://backend-yn0e.onrender.com/api/foodData",
       {
         method: "POST",
         headers: {
