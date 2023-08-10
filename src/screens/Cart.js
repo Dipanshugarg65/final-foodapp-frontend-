@@ -15,12 +15,11 @@ export default function Cart() {
   }
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
-    // console.log(data,localStorage.getItem("userEmail"),new Date())
+   
     let response = await fetch(
       "https://backend-yn0e.onrender.com/api/orderData",
       {
-        // credentials: 'include',
-        // Origin:"http://localhost:3000/login",
+       
         method: "POST",
         headers: {
           "Content-Type": "application/json",

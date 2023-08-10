@@ -8,8 +8,7 @@ export default function MyOrder() {
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem("userEmail"));
     await fetch("https://backend-yn0e.onrender.com/api/myOrderData", {
-      // credentials: 'include',
-      // Origin:"http://localhost:3000/login",
+     
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,9 +21,7 @@ export default function MyOrder() {
       setorderData(response);
     });
 
-    // await res.map((data)=>{
-    //    console.log(data)
-    // })
+  
   };
 
   useEffect(() => {
@@ -63,15 +60,7 @@ export default function MyOrder() {
                                       maxHeight: "360px",
                                     }}
                                   >
-                                    {/* <img
-                                      src={arrayData.img}
-                                      className="card-img-top"
-                                      alt="..."
-                                      style={{
-                                        height: "120px",
-                                        objectFit: "fill",
-                                      }}
-                                    /> */}
+                                    
                                     <div className="card-body">
                                       <h5 className="card-title">
                                         {arrayData.name}
